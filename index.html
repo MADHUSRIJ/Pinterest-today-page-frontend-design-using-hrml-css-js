@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pinterest</title>
+        <link rel="Stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="cols-sm 20">
+                <nav>
+                    <img src="Images/logo.png" class="logo">
+                    <button id="home">Home</button>
+                    <button id="today">Today</button>
+                    <input id="search" type="text" placeholder="Search">
+                    <i class="fas fa-search" id="se"></i>
+                    <i class="fas fa-bell" id="bell"></i>
+                    <i class="fas fa-comment-dots" id="mes"></i>
+                    <i class="fas fa-user-circle" id="user"></i>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-chevron-down" id="down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <p>Accounts</p>
+                          <a href="#">Add account</a>
+                          <a href="#">Convert to Bussiness</a>
+                          <p>More options</p>
+                          <a href="#">Setting</a>
+                          <a href="#">Tune your home feed</a>
+                          <a href="#">Install the window app</a>
+                          <a href="#">Get help</a>
+                          <a href="#">See terms and privacy</a>
+                          <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+            <div class="header">
+                <p style="font-weight: bold;">May 12, 2021</p>
+                <p style="font-size: 30px;font-weight: bold;">Stay INspired&nbsp;&nbsp;<i class="fas fa-home"></i></p>
+            </div>
+              
+              <div class="row"style="margin-left: -25%"> 
+                <div class="column" style="margin-left: 35%;">
+                  <div class="container">
+                    <img src="Images/a.jpg" class="image" style="width:40%">
+                    <div class="middle">
+                      <div class="text">THINGS TO DO IN LOCKDOWN<br><br>How to stay motivated during<br>the Covid 19 Lockdown</div>
+                    </div>
+                  </div>
+                  <img src="Images/b.jpg" style="width:98%;margin-left: 12px;">
+                  <div class="container">
+                    <img src="Images/c.jpg" style="width:40.5%;margin-left: -5px;">
+                    <div class="middle">
+                      <div class="text" style="color: white;font-size: 30px;">SOUTH INDIAN<br>SNACKS RECIPIES</div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="column" style="margin-left: 10px;">
+                    <img src="Images/1.jpg" style="width:100%">
+                    <div class="container" style="margin-left: -15px;">
+                      <img src="Images/2.jpg" class="image" style="width:41%">
+                      <div class="middle">
+                        <div class="text" >Games to play at home<br>with family members</div>
+                      </div>
+                  </div>
+                    <img src="Images/3.jpg" style="width:100%">
+        
+                  </div>
+            </div>
+            <div class="header">
+                 <i class="fas fa-check-circle" style="margin-top: 25px;font-size: 30px;"></i>
+                 <p style="margin-top: 10px;">That's all for today!</p>
+                 <p style="margin-top: 10px;font-size: 16px;font-weight: bold;">Come back tomorrow for<br>more inspiration</p>
+            </div>
+        
+          
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+     </script>
+    </body>
+</html>
